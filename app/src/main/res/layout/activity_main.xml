@@ -69,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 app:borderColor_AlphaSlideBar="@android:color/darker_gray"
-                app:borderSize_AlphaSlideBar="5"
+                app:borderSize_AlphaSlideBar="1dp"
                 app:selector_AlphaSlideBar="@drawable/wheel" />
         </LinearLayout>
 
@@ -85,7 +85,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:borderColor_BrightnessSlider="@android:color/darker_gray"
-                app:borderSize_BrightnessSlider="5"
+                app:borderSize_BrightnessSlider="1dp"
                 app:selector_BrightnessSlider="@drawable/wheel" />
         </LinearLayout>
 
@@ -114,6 +114,9 @@
                 android:layout_marginTop="10dp"
                 android:background="@android:color/white"
                 android:orientation="horizontal"
+                app:borderColor="#ff0000"
+                app:borderSize="3dp"
+                app:drawBorder="true"
                 app:tileSize="20" />
 
         </LinearLayout>

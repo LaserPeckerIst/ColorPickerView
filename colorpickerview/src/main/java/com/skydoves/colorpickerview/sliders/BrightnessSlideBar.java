@@ -71,7 +71,7 @@ public class BrightnessSlideBar extends AbstractSlider {
             }
             if (a.hasValue(R.styleable.BrightnessSlideBar_borderSize_BrightnessSlider)) {
                 borderSize =
-                        a.getInt(R.styleable.BrightnessSlideBar_borderSize_BrightnessSlider, borderSize);
+                        a.getDimensionPixelOffset(R.styleable.BrightnessSlideBar_borderSize_BrightnessSlider, borderSize);
             }
         } finally {
             a.recycle();

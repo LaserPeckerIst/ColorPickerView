@@ -71,7 +71,7 @@ public class AlphaSlideBar extends AbstractSlider {
                 borderColor = a.getColor(R.styleable.AlphaSlideBar_borderColor_AlphaSlideBar, borderColor);
             }
             if (a.hasValue(R.styleable.AlphaSlideBar_borderSize_AlphaSlideBar)) {
-                borderSize = a.getInt(R.styleable.AlphaSlideBar_borderSize_AlphaSlideBar, borderSize);
+                borderSize = a.getDimensionPixelOffset(R.styleable.AlphaSlideBar_borderSize_AlphaSlideBar, borderSize);
             }
         } finally {
             a.recycle();
