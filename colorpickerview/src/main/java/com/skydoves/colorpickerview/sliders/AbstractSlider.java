@@ -225,7 +225,7 @@ abstract class AbstractSlider extends FrameLayout {
     }
 
     private float getBoundaryX(float x) {
-        int maxPos = getMeasuredWidth() - selector.getMeasuredWidth();
+        int maxPos = getMeasuredWidth();//- selector.getMeasuredWidth();
         if (x >= maxPos) return maxPos;
         if (x <= getSelectorSize()) return 0;
         return x - getSelectorSize();
