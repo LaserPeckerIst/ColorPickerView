@@ -133,7 +133,9 @@ abstract class AbstractSlider extends FrameLayout {
         float width = getMeasuredWidth();
         float height = getMeasuredHeight();
         canvas.drawRect(0, 0, width, height, colorPaint);
-        canvas.drawRect(0, 0, width, height, borderPaint);
+
+        float strokeWidth = borderPaint.getStrokeWidth();
+        canvas.drawRect(strokeWidth / 2, strokeWidth / 2, width - strokeWidth / 2, height - strokeWidth / 2, borderPaint);
     }
 
     /**
