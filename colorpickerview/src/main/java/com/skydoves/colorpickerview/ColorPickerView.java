@@ -77,10 +77,10 @@ public class ColorPickerView extends FrameLayout implements LifecycleObserver {
     @ColorInt
     private int selectedColor;
     private Point selectedPoint;
-    private ImageView palette;
-    private ImageView selector;
+    public ImageView palette;
+    public ImageView selector;
     private FlagView flagView;
-    private Drawable paletteDrawable;
+    public Drawable paletteDrawable;
     private Drawable selectorDrawable;
     private AlphaSlideBar alphaSlideBar;
     private BrightnessSlideBar brightnessSlider;
